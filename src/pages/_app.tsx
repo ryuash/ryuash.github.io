@@ -1,6 +1,9 @@
+import '../styles/normalize.css'
 import '../styles/globals.css'
+import { theme } from '../styles/theme';
 import React from 'react';
 import Head from 'next/head';
+import { ThemeProvider } from 'styled-components';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -22,7 +25,9 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content="https://i.imgur.com/Pn5SFLb.png" />
         <title>Ryuash</title>
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </React.Fragment>
   )
 }
