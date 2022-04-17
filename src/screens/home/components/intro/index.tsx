@@ -1,10 +1,11 @@
 import React from 'react';
+import { Box } from '@src/components';
 
 const Intro = () => {
   return (
-    <div>
-      Intro
-    </div>
+    <Box>
+      <div>Photo</div>
+    </Box>
   )
 }
 
