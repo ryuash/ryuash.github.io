@@ -4,10 +4,10 @@ export const RootCSS = styled.div`
   width: 100%;
 
   .cover {
-    width: 70%;
-    height: 250px;
-    margin-right: ${(props) => !!props.index ? 'auto' : '0'};
-    margin-left: ${(props) => !!props.index ? '0' : 'auto'};
+    width: 60%;
+    height: 300px;
+    margin-right: ${(props) => props.index % 2 ? 'auto' : '0'};
+    margin-left: ${(props) => props.index % 2 ? '0' : 'auto'};
     overflow: hidden;
     border-radius: 3px;
   }
@@ -28,10 +28,10 @@ export const RootCSS = styled.div`
     padding: 2rem;
     border-radius: 5px;
     position: relative;
-    width: 70%;
+    width: 60%;
     margin-top: -5%;
-    margin-right: ${(props) => !!props.index ? '0' : 'auto'};
-    margin-left: ${(props) => !!props.index ? 'auto' : '0'};
+    margin-right: ${(props) => props.index % 2 ? '0' : 'auto'};
+    margin-left: ${(props) => props.index % 2 ? 'auto' : '0'};
     border: solid 1px ${props => props.theme.colors.divider};
   }
 

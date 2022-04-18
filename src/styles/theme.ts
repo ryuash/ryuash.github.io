@@ -47,7 +47,7 @@ export const theme = {
   },
   media: {
     ...media,
-    maxWidth: '800px',
+    maxWidth: '1024px',
     generateMedia: (device: 'xs' | 'sm' | 'md' | 'lg' | 'xl') => {
       const mediaSize = media[device] || media.xs;
       return `(min-width: ${mediaSize}px)`;

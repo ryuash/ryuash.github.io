@@ -8,7 +8,7 @@ export const RootCSS = styled(Box)`
 
   @media ${props => props.theme.media.generateMedia('md')} {
     .project:not(:last-child) {
-      margin-bottom: 4rem;
+      margin-bottom: 8rem;
     }
   }
 `;
