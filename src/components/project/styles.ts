@@ -14,7 +14,7 @@ ${props => props.theme.mixins.dropShadow}
     background-position: center center;
   }
 
-  .body--wrapper {
+  .body {
     padding: 1.5rem 1rem;
   }
 

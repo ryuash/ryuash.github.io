@@ -6,7 +6,10 @@ type ComponentDefault = {
 
 type ProjectType = {
   title: string;
-  cover: string;
+  cover: {
+    url: string;
+    className?: string;
+  };
   description: string;
   stack: string[];
   links: {

@@ -15,34 +15,37 @@ export const RootCSS = styled.div`
   }
 
   .body {
-    background: green;
-    padding: 1.5rem 1rem;
+    ${props => props.theme.mixins.dropShadow}
+    background: ${props => props.theme.background.surfaceOne};
+    padding: 2rem;
     min-height: 250px;
     border-radius: 5px;
+    position: relative;
+    width: 70%;
+    margin-top: -5%;
+    margin-right: ${(props) => !!props.index ? '0' : 'auto'};
+    margin-left: ${(props) => !!props.index ? 'auto' : '0'};
   }
 
-  // .body--title {
-  //   text-align: center;
-  //   color: ${props => props.theme.fonts.fontTwo}
-  // }
+  .body--title {
+    color: ${props => props.theme.fonts.fontTwo}
+  }
 
-  // .body--description {
-  //   margin-top: 0.5rem;
-  //   text-align: center;
-  // }
+  .body--description {
+    margin-top: 0.5rem;
+  }
 
-  // .body--stack {
-  //   margin-top: 1rem;
-  //   text-align: center;
-  // }
+  .body--stack {
+    margin-top: 1rem;
+  }
 
-  // .body--links {
-  //   margin-top: 1rem;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   a:not(:last-child) {
-  //     margin-right: 0.5rem;
-  //   }
-  // }
+  .body--links {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    a:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
 `;
