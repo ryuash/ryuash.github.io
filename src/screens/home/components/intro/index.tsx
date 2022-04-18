@@ -1,12 +1,19 @@
 import React from 'react';
-import { Box } from '@src/components';
+import { RootCSS } from './styles';
 
-const Intro = () => {
+function Intro() {
   return (
-    <Box>
-      <div>Photo</div>
-    </Box>
-  )
+    <RootCSS>
+      <div className="profile">
+        <img
+          className="profile--image"
+          src="/images/profile.jpeg"
+          alt="profile photo"
+        />
+      </div>
+      <div className="description">Description</div>
+    </RootCSS>
+  );
 }
 
 export default Intro;
