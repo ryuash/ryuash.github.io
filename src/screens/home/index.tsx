@@ -3,12 +3,14 @@ import { RootCSS } from './styles';
 import {
   Intro,
   Feature,
-  Projects
+  Projects,
+  Nav
 } from './components';
 
 const Home = () => {
   return (
     <RootCSS>
+      <Nav />
       <Intro />
       <Feature />
       <Projects />
