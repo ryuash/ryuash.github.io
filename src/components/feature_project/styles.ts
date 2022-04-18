@@ -4,17 +4,18 @@ export const RootCSS = styled.div`
   width: 100%;
 
   .cover {
-    width: 70%;
-    height: 250px;
-    margin-right: ${(props) => !!props.index ? 'auto' : '0'};
-    margin-left: ${(props) => !!props.index ? '0' : 'auto'};
+    width: 60%;
+    height: 300px;
+    margin-right: ${(props) => props.index % 2 ? 'auto' : '0'};
+    margin-left: ${(props) => props.index % 2 ? '0' : 'auto'};
     overflow: hidden;
     border-radius: 3px;
   }
 
   .cover--image {
     ${props => props.theme.mixins.transition}
-    filter: ${props => props.hover ? 'none' : 'grayscale(100%)'};
+    // ryuash
+    // filter: ${props => props.hover ? 'none' : 'grayscale(100%)'};
     transform: ${props => props.hover ? 'scale(1.1)' : 'scale(1)'};
     object-fit: cover;
     width: 100%;
@@ -25,13 +26,12 @@ export const RootCSS = styled.div`
     ${props => props.theme.mixins.dropShadow}
     background: ${props => props.theme.background.surfaceOne};
     padding: 2rem;
-    min-height: 250px;
     border-radius: 5px;
     position: relative;
-    width: 70%;
+    width: 60%;
     margin-top: -5%;
-    margin-right: ${(props) => !!props.index ? '0' : 'auto'};
-    margin-left: ${(props) => !!props.index ? 'auto' : '0'};
+    margin-right: ${(props) => props.index % 2 ? '0' : 'auto'};
+    margin-left: ${(props) => props.index % 2 ? 'auto' : '0'};
     border: solid 1px ${props => props.theme.colors.divider};
   }
 
@@ -45,13 +45,15 @@ export const RootCSS = styled.div`
 
   .body--stack {
     margin-top: 1rem;
+    text-align: right;
+    color: ${props => props.theme.fonts.fontFour}
   }
 
   .body--links {
     margin-top: 1rem;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     a:not(:last-child) {
       margin-right: 0.5rem;
     }

@@ -6,9 +6,13 @@ export const RootCSS = styled(Box)`
     margin-bottom: 2rem;
   }
 
-  @media ${props => props.theme.media.generateMedia('md')} {
+  @media ${props => props.theme.media.generateMedia('lg')} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+
     .project:not(:last-child) {
-      margin-bottom: 8rem;
+      margin-bottom: 0;
     }
   }
 `;

@@ -5,6 +5,8 @@ ${props => props.theme.mixins.dropShadow}
   width: 100%;
   border-radius: 5px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   .cover {
     height: 150px;
@@ -16,6 +18,12 @@ ${props => props.theme.mixins.dropShadow}
 
   .body {
     padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    border: solid 1px ${props => props.theme.colors.divider};
   }
 
   .body--title {
