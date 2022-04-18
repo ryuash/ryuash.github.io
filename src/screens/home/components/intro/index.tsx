@@ -1,6 +1,6 @@
 import React from 'react';
 import { RootCSS } from './styles';
-import { contactLinks } from './utils';
+import { contactLinks } from '../../utils';
 
 function Intro() {
   return (

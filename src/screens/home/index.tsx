@@ -4,7 +4,8 @@ import {
   Intro,
   Features,
   Projects,
-  Nav
+  Nav,
+  Footer
 } from './components';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Intro />
       <Features />
       <Projects />
+      <Footer />
     </RootCSS>
   )
 }
