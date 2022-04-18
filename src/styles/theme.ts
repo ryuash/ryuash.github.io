@@ -37,7 +37,8 @@ export const theme = {
     divider: '#e8e8e8',
   },
   background: {
-    surfaceOne: '#ffffff'
+    surfaceOne: '#ffffff',
+    dark: '#1f1f22',
   },
   fonts: {
     fontOne: '#000000',
