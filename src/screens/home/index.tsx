@@ -2,7 +2,7 @@ import React from 'react';
 import { RootCSS } from './styles';
 import {
   Intro,
-  Feature,
+  Features,
   Projects,
   Nav
 } from './components';
@@ -12,7 +12,7 @@ const Home = () => {
     <RootCSS>
       <Nav />
       <Intro />
-      <Feature />
+      <Features />
       <Projects />
     </RootCSS>
   )
