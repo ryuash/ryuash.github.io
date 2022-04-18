@@ -8,7 +8,7 @@ const Features = () => {
     <RootCSS>
       {projects.map((x) => {
         return (
-          <Feature key={x.title} />
+          <Feature key={x.title} project={x} />
         )
       })}
     </RootCSS>

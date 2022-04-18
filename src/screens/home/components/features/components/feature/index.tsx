@@ -1,11 +1,12 @@
 import React from 'react';
 import { useScreenSize } from '@src/hooks';
+import { Project } from '@src/components';
 
-const Feature: React.FC<ComponentDefault> = (props) => {
+const Feature: React.FC<{project: ProjectType} & ComponentDefault> = (props) => {
   const { isMobile } = useScreenSize();
   if (isMobile) {
     return (
-      <div>Mobile</div>
+      <Project project={props.project} />
     )
   }
 

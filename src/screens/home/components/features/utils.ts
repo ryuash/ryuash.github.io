@@ -1,7 +1,7 @@
-export const projects = [
+export const projects: ProjectType[] = [
   {
     title: 'Multiplayer Conway\'s Game of Life',
-    cover: './game-of-life.png',
+    cover: '/projects/game-of-life.png',
     description: 'A spinoff of the popular Game of Life. This project was created as a fun refresher on how to use SocketIO and it\'s websocket protocols. Real-time interactive was created using SocketIO and Nodejs on the backend and React on the frontend.',
     stack: ['React', 'Express', 'Nodejs', 'SocketIO'],
     links: [
