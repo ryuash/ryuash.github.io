@@ -15,6 +15,9 @@ const mixins = {
       cursor: pointer;
     }
   `,
+  transition: css`
+    transition: 0.3s;
+  `,
   dropShadow: css`
     -webkit-box-shadow: 13px 14px 14px -10px rgba(56,56,56,0.4);
     -moz-box-shadow: 13px 14px 14px -10px rgba(56,56,56,0.4);

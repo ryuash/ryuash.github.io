@@ -6,12 +6,18 @@ export const RootCSS = styled.div`
   .cover {
     width: 70%;
     height: 250px;
-    background: ${(props) => `url(${props.cover})`};
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     margin-right: ${(props) => !!props.index ? 'auto' : '0'};
     margin-left: ${(props) => !!props.index ? '0' : 'auto'};
+    overflow: hidden;
+  }
+
+  .cover--image {
+    ${props => props.theme.mixins.transition}
+    filter: ${props => props.hover ? 'none' : 'grayscale(100%)'};
+    transform: ${props => props.hover ? 'scale(1.25)' : 'scale(1)'};
+    object-fit: cover;
+    width: 100%;
+    height: auto;
   }
 
   .body {
