@@ -1,10 +1,11 @@
 import React from 'react';
+import { RootCSS } from './styles';
 
 const Projects = () => {
   return (
-    <div>
+    <RootCSS>
       Projects
-    </div>
+    </RootCSS>
   )
 }
 
