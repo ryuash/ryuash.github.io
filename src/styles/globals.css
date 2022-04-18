@@ -81,3 +81,8 @@ caption {
   font-size: 0.75rem;
   letter-spacing: 0.4px;
 }
+
+a {
+  color: #0a5c59;
+  text-decoration: none;
+}

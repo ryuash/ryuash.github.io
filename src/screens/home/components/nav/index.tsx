@@ -1,10 +1,11 @@
 import React from 'react';
+import { RootCSS } from './styles';
 
 const Nav = () => {
   return (
-    <div>
-    nave
-    </div>
+    <RootCSS>
+    nav
+    </RootCSS>
   )
 }
 
