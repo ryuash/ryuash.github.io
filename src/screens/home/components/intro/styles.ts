@@ -19,29 +19,29 @@ export const RootCSS = styled(Box)`
   .profile--decoration--rightOne {
     height: 5px;
     width: 100px;
-    top: 30px;
-    left: 90px;
+    top: 20%;
+    right: -25%;
   }
 
   .profile--decoration--rightTwo {
     height: 3px;
     width: 100px;
-    top: 40px;
-    left: 70px;
+    top: 27%;
+    right: -13%;
   }
 
   .profile--decoration--leftOne {
-    height: 3px;
+    height: 7px;
     width: 100px;
-    bottom: 20px;
-    right: 70px;
+    bottom: 14%;
+    left: -10%;
   }
 
   .profile--decoration--leftTwo {
     height: 4px;
-    width: 200px;
-    bottom: 30px;
-    left: -35px;
+    width: 140%;
+    bottom: 22%;
+    left: -25%;
     border-radius: 2px;
   }
 
@@ -74,5 +74,23 @@ export const RootCSS = styled(Box)`
 
   .description--block--links {
     margin-top: 1.5rem;
+  }
+
+  @media ${props => props.theme.media.generateMedia('md')} {
+    .profile--block {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  @media ${props => props.theme.media.generateMedia('lg')} {
+    .profile--block {
+      height: 250px;
+      width: 250px;
+    }
+
+    .description {
+      margin-top: 2rem;
+    }
   }
 `;

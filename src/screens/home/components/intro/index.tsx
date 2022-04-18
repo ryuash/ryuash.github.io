@@ -6,6 +6,9 @@ function Intro() {
   return (
     <RootCSS>
       <div className="profile">
+        <div>
+          Hello image maybe
+        </div>
         <div className="profile--block">
           <img
             className="profile--image"
