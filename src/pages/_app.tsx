@@ -1,6 +1,5 @@
-import '../styles/normalize.css'
-import '../styles/globals.css'
-import { theme } from '../styles/theme';
+import { GlobalCSS } from '@src/styles/global';
+import { theme } from '@src/styles/theme';
 import React from 'react';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
@@ -28,6 +27,7 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
+      <GlobalCSS />
     </React.Fragment>
   )
 }
