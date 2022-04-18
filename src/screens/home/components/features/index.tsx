@@ -8,18 +8,18 @@ const Features = () => {
   const { isMobile } = useScreenSize();
   return (
     <RootCSS>
-      {projects.map((x) => {
+      {projects.map((x, i) => {
         let component = null;
         if (isMobile) {
-          component = <Project project={x} />;
+          component = <Project project={x} className="project" />;
         } else {
-          component = <FeatureProject project={x} />;
+          component = <FeatureProject project={x} index={i} className="project" />;
         }
 
         return (
-          <React.Component key={x.title}>
+          <React.Fragment key={x.title}>
             {component}
-          </React.Component>
+          </React.Fragment>
         )
       })}
     </RootCSS>

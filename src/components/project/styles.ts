@@ -16,7 +16,6 @@ ${props => props.theme.mixins.dropShadow}
 
   .body--wrapper {
     padding: 1.5rem 1rem;
-    min-height: 250px;
   }
 
   .body--title {
