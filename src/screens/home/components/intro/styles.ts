@@ -46,8 +46,8 @@ export const RootCSS = styled(Box)`
   }
 
   .profile--block {
-    height: 150px;
-    width: 150px;
+    height: 175px;
+    width: 175px;
     border-radius: 3px;
     overflow: hidden;
     position: relative;
