@@ -1,9 +1,9 @@
 const media = {
-  xs: '320px',
-  sm: '375px',
-  md: '768px',
-  lg: '1024px',
-  xl: '1440px',
+  xs: 320,
+  sm: 375,
+  md: 768,
+  lg: 1024,
+  xl: 1440,
 }
 
 export const theme = {
@@ -19,7 +19,7 @@ export const theme = {
     maxWidth: '800px',
     generateMedia: (device: 'xs' | 'sm' | 'md' | 'lg' | 'xl') => {
       const mediaSize = media[device] || media.xs;
-      return `(min-width: ${mediaSize})`;
+      return `(min-width: ${mediaSize}px)`;
     }
   }
 }

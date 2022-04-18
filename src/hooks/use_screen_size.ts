@@ -1,7 +1,7 @@
 import {
   useState, useEffect,
 } from 'react';
-import { useTheme } from '@material-ui/core/styles';
+import { theme } from '@src/styles/theme';
 
 export const useScreenSize = () => {
   const isClient = typeof window === 'object';
@@ -18,8 +18,6 @@ export const useScreenSize = () => {
   const [isTablet, setIsTablet] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(true);
 
-  const theme:any = useTheme();
-
   useEffect((): any => {
     if (!isClient) {
       return false;
@@ -31,26 +29,26 @@ export const useScreenSize = () => {
     window.addEventListener('resize', handleResize);
 
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  });
 
   useEffect(() => {
     const width = windowSize?.width ?? 0;
     // is mobile
-    if (width < theme?.breakpoints?.values?.md) {
+    if (width < theme.media.md) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
     }
     // is tablet
-    if (width >= theme?.breakpoints?.values?.md
-      && width < theme?.breakpoints?.values?.lg) {
+    if (width >= theme.media.md
+      && width < theme.media.lg) {
       setIsTablet(true);
     } else {
       setIsTablet(false);
     }
 
     // is desktop
-    if (width >= theme?.breakpoints?.values?.lg) {
+    if (width >= theme.media.lg) {
       setIsDesktop(true);
     } else {
       setIsDesktop(false);

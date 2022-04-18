@@ -1,6 +1,6 @@
 import React from 'react';
 import { RootCSS } from './styles';
-import { SingleFeature } from './components';
+import { Feature } from './components';
 import { projects } from './utils';
 
 const Features = () => {
@@ -8,7 +8,7 @@ const Features = () => {
     <RootCSS>
       {projects.map((x) => {
         return (
-          <SingleFeature key={x.title} />
+          <Feature key={x.title} />
         )
       })}
     </RootCSS>
