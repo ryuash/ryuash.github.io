@@ -9,12 +9,13 @@ export const RootCSS = styled.div`
     margin-right: ${(props) => !!props.index ? 'auto' : '0'};
     margin-left: ${(props) => !!props.index ? '0' : 'auto'};
     overflow: hidden;
+    border-radius: 3px;
   }
 
   .cover--image {
     ${props => props.theme.mixins.transition}
     filter: ${props => props.hover ? 'none' : 'grayscale(100%)'};
-    transform: ${props => props.hover ? 'scale(1.25)' : 'scale(1)'};
+    transform: ${props => props.hover ? 'scale(1.1)' : 'scale(1)'};
     object-fit: cover;
     width: 100%;
     height: auto;
@@ -31,6 +32,7 @@ export const RootCSS = styled.div`
     margin-top: -5%;
     margin-right: ${(props) => !!props.index ? '0' : 'auto'};
     margin-left: ${(props) => !!props.index ? 'auto' : '0'};
+    border: solid 1px ${props => props.theme.colors.divider};
   }
 
   .body--title {

@@ -34,6 +34,7 @@ export const theme = {
   colors: {
     primary: '#0a5c59',
     secondary: '#faf3de',
+    divider: '#e8e8e8',
   },
   background: {
     surfaceOne: '#ffffff'
