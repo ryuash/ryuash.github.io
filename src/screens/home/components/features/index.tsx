@@ -7,7 +7,7 @@ import { projects } from './utils';
 const Features = () => {
   const { isMobile } = useScreenSize();
   return (
-    <RootCSS>
+    <RootCSS id="projects">
       {projects.map((x, i) => {
         let component = null;
         if (isMobile) {
