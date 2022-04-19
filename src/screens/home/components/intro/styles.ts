@@ -11,6 +11,12 @@ export const RootCSS = styled(Box)`
     position: relative;
   }
 
+  .title {
+    font-family: "Lobster", sans-serif;
+    margin-bottom: 1rem;
+    color: ${props => props.theme.fonts.fontTwo};
+  }
+
   .profile--decoration {
     position: absolute;
     background: ${props => props.theme.colors.primary};
@@ -78,6 +84,11 @@ export const RootCSS = styled(Box)`
   }
 
   @media ${props => props.theme.media.generateMedia('md')} {
+    .title {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
     .profile--block {
       height: 200px;
       width: 200px;
@@ -92,6 +103,7 @@ export const RootCSS = styled(Box)`
 
     .description {
       margin-top: 2rem;
+      max-width: 600px;
     }
   }
 `;

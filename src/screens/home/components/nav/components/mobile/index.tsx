@@ -23,7 +23,7 @@ const Mobile = () => {
           href='#about'
           offset='50'
         >
-          <h4 onClick={toggleOff}>Ryuash</h4>
+          <h2 className="nav--title" onClick={toggleOff}>Ryuash</h2>
         </AnchorLink>
       </div>
       <div className="menu">

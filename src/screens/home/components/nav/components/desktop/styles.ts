@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const RootCSS = styled.div`
   .nav {
-    padding: 1rem;
+    padding: 1rem 2rem;
     position: fixed;
     height: 60px;
     background: ${props => props.theme.background.surfaceOne};
@@ -11,7 +11,12 @@ export const RootCSS = styled.div`
     z-index: 99;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    border-bottom: solid 1px ${props => props.theme.colors.divider};
+  }
+
+  .nav--title {
+    font-family: "Lobster", sans-serif;
   }
 
   .nav--placeholder {
@@ -21,8 +26,6 @@ export const RootCSS = styled.div`
 
   .menu {
     display: flex;
-    right: 1rem;
-    position: absolute;
   }
 
   .menu--item {

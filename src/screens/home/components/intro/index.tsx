@@ -5,10 +5,10 @@ import { contactLinks } from '../../utils';
 function Intro() {
   return (
     <RootCSS id="about">
+      <h1 className="title">
+          [ Hello? ]
+        </h1>
       <div className="profile">
-        <div>
-          Hello image maybe
-        </div>
         <div className="profile--block">
           <img
             className="profile--image"
@@ -23,7 +23,7 @@ function Intro() {
       </div>
       <div className="description">
         <p className="description--block">
-          I’m Wingman, a Software Engineer currently based in New York/ Hong Kong. I design and develop high quality applications with the user experience code quality as a top priority.
+          I’m Wingman, a Software Engineer currently based between New York/ Hong Kong
         </p>
         <p className="description--block">
           Currently on the engineering team at Forbole where I lead the development and maintenance of{' '}

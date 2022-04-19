@@ -18,6 +18,10 @@ export const RootCSS = styled.div`
     z-index: 99;
   }
 
+  .nav--title {
+    font-family: "Lobster", sans-serif;
+  }
+
   .menu {
     ${props => props.theme.mixins.transition}
     position: fixed;

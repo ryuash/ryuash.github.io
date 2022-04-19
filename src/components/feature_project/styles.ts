@@ -14,7 +14,6 @@ export const RootCSS = styled.div`
 
   .cover--image {
     ${props => props.theme.mixins.transition}
-    // ryuash
     // filter: ${props => props.hover ? 'none' : 'grayscale(100%)'};
     transform: ${props => props.hover ? 'scale(1.1)' : 'scale(1)'};
     object-fit: cover;
@@ -29,7 +28,7 @@ export const RootCSS = styled.div`
     border-radius: 5px;
     position: relative;
     width: 60%;
-    margin-top: -5%;
+    margin-top: -7%;
     margin-right: ${(props) => props.index % 2 ? '0' : 'auto'};
     margin-left: ${(props) => props.index % 2 ? 'auto' : '0'};
     border: solid 1px ${props => props.theme.colors.divider};

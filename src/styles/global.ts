@@ -17,6 +17,12 @@ export const GlobalCSS = createGlobalStyle`
     font-weight: 500;
   }
 
+  @font-face {
+    font-family: 'Lobster';
+    src: url("/fonts/Lobster-Regular.ttf");
+    font-weight: 400;
+  }
+
   * {
     margin: 0;
     padding: 0;
