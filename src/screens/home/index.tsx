@@ -13,7 +13,14 @@ const Home = () => {
     <RootCSS>
       <Nav />
       <Intro />
+      <div className="container-one">
+        <div className="block-one" />
+        <div className="block-two" />
+        <div className="block-three" />
+        <div className="block-four" />
+      </div>
       <Features />
+
       <Projects />
       <Footer />
     </RootCSS>

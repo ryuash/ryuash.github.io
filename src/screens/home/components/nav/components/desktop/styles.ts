@@ -29,8 +29,12 @@ export const RootCSS = styled.div`
   }
 
   .menu--item {
+    ${props => props.theme.mixins.transition}
     &:not(:last-child) {
       margin-right: 1rem;
+    }
+    &:hover {
+      opacity: 0.7;
     }
   }
 `;
