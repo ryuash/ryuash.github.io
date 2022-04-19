@@ -26,7 +26,7 @@ function Intro() {
       </div>
       <div className="description">
         <p className="description--block">
-          I’m Wingman, a Software Engineer currently based between New York/ Hong Kong
+          I’m Wingman, a Software Engineer based between New York/ Hong Kong
         </p>
         <p className="description--block">
           Currently on the engineering team at Forbole where I lead the development and maintenance of{' '}
