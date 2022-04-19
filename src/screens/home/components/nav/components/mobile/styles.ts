@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
 export const RootCSS = styled.div`
+  .nav--placeholder {
+    width: 100%;
+    height: 50px;
+  }
+
   .nav--block {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: ${props => props.theme.background.surfaceOne};
     height: 50px;
     position: fixed;
     top: 0;
@@ -29,6 +34,7 @@ export const RootCSS = styled.div`
     padding: 1rem;
     padding-right: 1.6rem;
     font-size: 1.1rem;
+    display: block;
   }
 
   .menu--overlay {

@@ -28,14 +28,19 @@ const Mobile = () => {
       </div>
       <div className="menu">
       {navItems.map((x) => (
-        <AnchorLink href={x.to} offset='50' key={x.to}>
-          <p className="menu--item" onClick={toggle}>
-            {x.display}
-          </p>
+        <AnchorLink
+          href={x.to}
+          offset='50'
+          key={x.to}
+          className="menu--item"
+          onClick={toggleOff}
+        >
+          {x.display}
         </AnchorLink>
       ))}
       </div>
       <div className="menu--overlay" onClick={toggle} />
+      <div className="nav--placeholder" />
     </RootCSS>
   )
 }
