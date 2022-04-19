@@ -18,7 +18,7 @@ export const RootCSS = styled.div`
     transform: ${props => props.hover ? 'scale(1.1)' : 'scale(1)'};
     object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .body {

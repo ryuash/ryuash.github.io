@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const RootCSS = styled.div`
   .box--wrapper {
-    padding: 2.5rem 2rem;
+    padding: 3rem 2rem;
   }
 
   @media ${props => props.theme.media.generateMedia('md')} {

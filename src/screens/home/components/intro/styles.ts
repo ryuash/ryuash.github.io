@@ -23,7 +23,7 @@ export const RootCSS = styled(Box)`
   }
 
   .profile--decoration--rightOne {
-    height: 5px;
+    height: 20px;
     width: 100px;
     top: 20%;
     right: -25%;
@@ -32,12 +32,12 @@ export const RootCSS = styled(Box)`
   .profile--decoration--rightTwo {
     height: 3px;
     width: 100px;
-    top: 27%;
+    top: 35%;
     right: -13%;
   }
 
   .profile--decoration--leftOne {
-    height: 7px;
+    height: 15px;
     width: 100px;
     bottom: 14%;
     left: -10%;
@@ -49,6 +49,33 @@ export const RootCSS = styled(Box)`
     bottom: 22%;
     left: -25%;
     border-radius: 2px;
+  }
+
+  .profile--decoration--leftThree {
+    height: 10px;
+    width: 20%;
+    bottom: 22%;
+    left: -25%;
+    border-radius: 2px;
+  }
+
+  .profile--decoration--leftFour {
+    height: 10px;
+    width: 20%;
+    bottom: 22%;
+    left: 10px;
+    position: relative;
+    border-radius: 2px;
+  }
+
+  .profile--decoration--leftFive {
+    height: 18px;
+    width: 40%;
+    top: -3px;
+    left: -15%;
+    position: absolute;
+    border-radius: 2px;
+    z-index: 1;
   }
 
   .profile--block {
