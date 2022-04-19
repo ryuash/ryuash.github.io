@@ -4,7 +4,7 @@ import { contactLinks } from '../../utils';
 
 function Intro() {
   return (
-    <RootCSS>
+    <RootCSS id="about">
       <div className="profile">
         <div>
           Hello image maybe

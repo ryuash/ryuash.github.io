@@ -7,8 +7,15 @@ export const useMobile = () => {
     toggleOpen(!isOpen);
   };
 
+  const toggleOff = () => {
+    if (isOpen) {
+      toggleOpen(false)
+    }
+  }
+
   return {
     isOpen,
     toggle,
+    toggleOff,
   };
 }

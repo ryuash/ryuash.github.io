@@ -1,10 +1,10 @@
 export const navItems = [
   {
     display: 'About',
-    to: '/#about',
+    to: '#about',
   },
   {
     display: 'Projects',
-    to: '/#projects',
+    to: '#projects',
   },
 ];

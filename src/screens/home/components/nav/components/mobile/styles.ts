@@ -12,6 +12,34 @@ export const RootCSS = styled.div`
     top: 0;
     z-index: 99;
   }
+
+  .menu {
+    ${props => props.theme.mixins.transition}
+    position: fixed;
+    width: ${props => props.isOpen ? '80%' : '0'};
+    background: ${props => props.theme.background.surfaceOne};
+    height: calc(100vh - 50px);
+    top: 50px;
+    right: 0;
+    z-index: 60;
+    overflow: hidden;
+  }
+
+  .menu--item {
+    padding: 1rem;
+    padding-right: 1.6rem;
+    font-size: 1.1rem;
+  }
+
+  .menu--overlay {
+    ${props => props.theme.mixins.transition}
+    position: fixed;
+    opacity: ${props => props.isOpen ? '100%' : '0'};
+    width: 100%;
+    height: 100vh;
+    background: rgba(12, 13, 16, 0.50);
+    z-index: 50;
+  }
 `;
 
 export const NavIconCSS = styled.div`
