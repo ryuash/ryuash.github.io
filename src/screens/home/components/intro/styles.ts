@@ -14,7 +14,7 @@ export const RootCSS = styled(Box)`
   .title {
     font-family: "Lobster", sans-serif;
     margin-bottom: 1rem;
-    color: ${props => props.theme.fonts.fontTwo};
+    color: ${props => props.theme.colors.primary};
   }
 
   .profile--decoration {
@@ -27,6 +27,7 @@ export const RootCSS = styled(Box)`
     width: 100px;
     top: 20%;
     right: -25%;
+    background: ${props => props.theme.colors.primaryTwo};
   }
 
   .profile--decoration--rightTwo {
@@ -34,6 +35,7 @@ export const RootCSS = styled(Box)`
     width: 100px;
     top: 35%;
     right: -13%;
+    background: ${props => props.theme.colors.primaryThree};
   }
 
   .profile--decoration--leftOne {
@@ -41,6 +43,7 @@ export const RootCSS = styled(Box)`
     width: 100px;
     bottom: 14%;
     left: -10%;
+    background: ${props => props.theme.colors.secondary};
   }
 
   .profile--decoration--leftTwo {
