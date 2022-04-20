@@ -32,8 +32,11 @@ const mixins = {
 
 export const theme = {
   colors: {
-    primary: '#0a5c59',
-    secondary: '#faf3de',
+    primary: '#194b42',
+    primaryTwo: '#4c7751',
+    primaryThree: '#9dc88e',
+    secondary: '#f1b548',
+    white: '#ffffff',
     divider: '#e8e8e8',
   },
   background: {

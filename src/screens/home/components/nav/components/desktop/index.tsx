@@ -16,7 +16,9 @@ const Desktop = () => {
         <div className="menu">
           {navItems.map((x) => (
             <AnchorLink href={x.to} offset='60' key={x.to} className="menu--item">
-              {x.display}
+              <p>
+                {x.display}
+              </p>
             </AnchorLink>
           ))}
         </div>

@@ -20,6 +20,7 @@ export const RootCSS = styled.div`
 
   .nav--title {
     font-family: "Lobster", sans-serif;
+    color: ${props => props.theme.colors.primary};
   }
 
   .menu {

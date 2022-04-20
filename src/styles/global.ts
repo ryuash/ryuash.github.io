@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import Color from 'color';
 import { normalize } from 'styled-normalize';
 import { theme } from '@src/styles/theme';
 
@@ -91,8 +92,13 @@ export const GlobalCSS = createGlobalStyle`
   }
 
   a {
-    color: #0a5c59;
+    ${theme.mixins.hoverTransition}
+    color: ${theme.colors.primaryTwo};
     text-decoration: none;
+  }
+
+  a:hover {
+    color: ${Color(theme.colors.primaryTwo).alpha(0.6).toString()};
   }
 
   svg {

@@ -35,7 +35,9 @@ const Mobile = () => {
           className="menu--item"
           onClick={toggleOff}
         >
-          {x.display}
+          <p>
+            {x.display}
+          </p>
         </AnchorLink>
       ))}
       </div>

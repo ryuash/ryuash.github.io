@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
     "classnames": "^2.3.1",
+    "color": "^4.2.3",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
