@@ -24,7 +24,7 @@ const Home = () => {
         <div className="container-two--one" />
         <div className="container-two--two" />
         <div className="container-two--three" />
-        <div className="container-two--four" />
+        {/* <div className="container-two--four" /> */}
         <div className="container-two--five" />
       </div>
       <Projects />

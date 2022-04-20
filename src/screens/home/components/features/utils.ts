@@ -1,5 +1,21 @@
 export const projects: ProjectType[] = [
   {
+    title: 'Big Dipper',
+    cover: {
+      url: '/projects/big-dipper.png',
+      className: 'big-dipper'
+    },
+    description: 'Big Dipper is an open source blockchain explorer that I helped revamp and maintain. By far, it is one of the most rewarding project that I\'ve built and watched stabilized. Currently the project has over 50 forks with the original having over 200 forks. While primarily focused on the Cosmos SDK ecosystem, it has since been expanded to provide support for Elrond, Flow, and Solana too.',
+    stack: ['Nextjs, Material-UI, Nodejs, Jest'],
+    links: [
+      {
+        type: 'github',
+        description: 'cosmos ui',
+        url: 'https://github.com/forbole/big-dipper-2.0-cosmos',
+      },
+    ],
+  },
+  {
     title: 'Multiplayer Conway\'s Game of Life',
     cover: {
       url: '/projects/game-of-life.png',
@@ -24,16 +40,6 @@ export const projects: ProjectType[] = [
         url: 'https://gol-react-ryuash.herokuapp.com/',
       },
     ],
-  },
-  {
-    title: 'Uprise Merchant App',
-    cover: {
-      url: '/projects/uprise-merchant.png',
-      className: 'uprise-merchant'
-    },
-    description: 'Uprise Merchant App is the merchant facing part of the loan platform designed by me and developed with the tech team during my time at Uprise. Some features I imeplemented were merchant team integrations, user attempt lockouts and OAuth integrations with Stripe and Paypal.',
-    stack: [],
-    links: [],
   },
   {
     title: 'Stackbox',
