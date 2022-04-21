@@ -57,7 +57,7 @@ export const RootCSS = styled.div`
     width: 10%;
     background: ${props => props.theme.colors.secondary};
     position: absolute;
-    right: 40%;
+    right: 5%;
     top: -20px;
   }
 
@@ -67,7 +67,7 @@ export const RootCSS = styled.div`
     background: ${props => props.theme.colors.primary};
     position: absolute;
     right: 0;
-    top: 0;
+    top: -10px;
   }
 
   .container-two--five {
