@@ -5,7 +5,7 @@ export const projects: ProjectType[] = [
       url: '/projects/big-dipper.png',
       className: 'big-dipper'
     },
-    description: 'Big Dipper is an open source blockchain explorer that I helped revamp and maintain. By far, it is one of the most rewarding project that I\'ve built and watched stabilized. Currently the project has over 50 forks with the original having over 200 forks. While primarily focused on the Cosmos SDK ecosystem, it has since been expanded to provide support for Elrond, Flow, and Solana too.',
+    description: 'Big Dipper is an open source blockchain explorer that I helped revamp and maintain. By far, it is one of the most rewarding project that I\'ve built and watched stabilise. Currently the project has over 50 forks with the original having over 200 forks. While primarily focused on the Cosmos SDK ecosystem, it has since been expanded to provide support for Elrond, Flow, and Solana too.',
     stack: ['Nextjs, Material-UI, Nodejs, Jest'],
     links: [
       {
