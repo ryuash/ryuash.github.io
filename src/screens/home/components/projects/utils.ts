@@ -15,7 +15,7 @@ export const projects: ProjectType[] = [
       url: '/projects/desmos-profile-preview.png',
       className: 'profile-preview'
     },
-    description: 'Desmos Profile Preview is a app made to visualise how your desmos profile will look on Big Dipper before doing any costing transaction.',
+    description: 'Desmos Profile Preview is an app made to visualise how your desmos profile will look on Big Dipper before doing any costing transaction.',
     stack: ['Nodejs'],
     links: [
       {
