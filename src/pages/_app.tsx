@@ -9,7 +9,7 @@ const OPEN_GRAPH_SEO = {
   site_name: 'Ryuash',
   images: [
     {
-      url: 'https://ryuash.github.io/icons/favicon-32x32.png',
+      url: 'https://ryuash.github.io/images/icon.png',
       width: 32,
       height: 32,
       alt: 'Preview Photo',
