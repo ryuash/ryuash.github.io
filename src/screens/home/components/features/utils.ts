@@ -16,6 +16,27 @@ export const projects: ProjectType[] = [
     ],
   },
   {
+    title: 'Sven',
+    cover: {
+      url: '/projects/sven.png',
+      className: 'sven'
+    },
+    description: 'Sven is an art piece I made in React for my professor\'s retirement gallery. The theme was to showcase what his students are currently doing after graduation so I thought this would be a fun way to show how art and code often coexist and touch up on my animation skills along the way.',
+    stack: ['React'],
+    links: [
+      {
+        type: 'github',
+        description: 'github sven',
+        url: 'https://github.com/ryuash/sven-gallery',
+      },
+      {
+        type: 'external',
+        description: 'sven',
+        url: 'https://ryuash.github.io/sven-gallery/',
+      },
+    ],
+  },
+  {
     title: 'Multiplayer Conway\'s Game of Life',
     cover: {
       url: '/projects/game-of-life.png',
@@ -38,27 +59,6 @@ export const projects: ProjectType[] = [
         type: 'external',
         description: 'Game of life',
         url: 'https://gol-react-ryuash.herokuapp.com/',
-      },
-    ],
-  },
-  {
-    title: 'Stackbox',
-    cover: {
-      url: '/projects/stackbox.png',
-      className: 'stackbox'
-    },
-    description: 'A spinoff of the popular Jackbox party games developed by Jackbox Games. Stackbox is a multiplayer collaborative project with several games designed to be played with one device acting as a host, and up to four players on their personal devices. Stackbox utilizes Google’s real-time Firebase for real-time interactivity',
-    stack: ['React', 'Redux', 'Recharts', 'Express', 'Firebase', 'Mocha', 'Chai'],
-    links: [
-      {
-        type: 'github',
-        description: 'github stackbox',
-        url: 'https://github.com/guava-jay/capstone',
-      },
-      {
-        type: 'external',
-        description: 'stackbox',
-        url: 'https://stackbox.herokuapp.com/',
       },
     ],
   },
