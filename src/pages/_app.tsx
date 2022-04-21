@@ -10,8 +10,8 @@ const OPEN_GRAPH_SEO = {
   images: [
     {
       url: 'https://ryuash.github.io/images/icon.png',
-      width: 32,
-      height: 32,
+      width: 300,
+      height: 300,
       alt: 'Preview Photo',
     },
   ],
