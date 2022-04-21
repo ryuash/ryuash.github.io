@@ -5,7 +5,7 @@ export const projects: ProjectType[] = [
       url: '/projects/big-dipper.png',
       className: 'big-dipper'
     },
-    description: 'Big Dipper is an open source blockchain explorer that I helped revamp and maintain. By far, it is one of the most rewarding project that I\'ve built and watched stabilise. Currently the project has over 50 forks with the original having over 200 forks. While primarily focused on the Cosmos SDK ecosystem, it has since been expanded to provide support for Elrond, Flow, and Solana too.',
+    description: 'Big Dipper is an open source blockchain explorer that I helped develop and maintain. Currently the project has over 50 forks with the original having over 200 forks. While primarily focused on the Cosmos SDK ecosystem, it has since been expanded to provide support for Elrond, Flow, and Solana too.',
     stack: ['Nextjs, Material-UI, Nodejs, Jest'],
     links: [
       {
@@ -21,7 +21,7 @@ export const projects: ProjectType[] = [
       url: '/projects/sven.png',
       className: 'sven'
     },
-    description: 'Sven is an art piece I made in React for my professor\'s retirement gallery. The theme was to showcase what his students are currently doing after graduation so I thought this would be a fun way to show how art and code often coexist and touch up on my animation skills along the way.',
+    description: 'Sven is a piece I developed in React for my professor\'s retirement gallery. The theme was to showcase what his students are currently doing after graduation so I thought this would be a fun way to show how art and code often coexist while touching up on my animation skills along the way.',
     stack: ['React'],
     links: [
       {
