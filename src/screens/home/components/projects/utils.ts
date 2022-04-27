@@ -31,7 +31,7 @@ export const projects: ProjectType[] = [
       url: '/projects/stackbox.png',
       className: 'stackbox'
     },
-    description: 'A spinoff of the popular Jackbox party games developed by Jackbox Games. Stackbox is a multiplayer collaborative project with several games designed to be played with one device acting as a host, and up to four players on their personal devices. Stackbox utilizes Google’s real-time Firebase for real-time interactivity',
+    description: 'A spinoff of the popular Jackbox party games developed by Jackbox Games. Stackbox is a multiplayer collaborative project with several mini games designed to be played using multiple media devices.',
     stack: ['React', 'Redux', 'Recharts', 'Express', 'Firebase', 'Mocha', 'Chai'],
     links: [
       {
@@ -106,11 +106,6 @@ export const projects: ProjectType[] = [
         type: 'github',
         description: 'github pluto games',
         url: 'https://github.com/Goat-Pluto-Shopper/pluto-games',
-      },
-      {
-        type: 'external',
-        description: 'pluto games',
-        url: 'https://pluto-games.herokuapp.com/',
       },
     ],
   },
