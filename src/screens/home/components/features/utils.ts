@@ -21,7 +21,7 @@ export const projects: ProjectType[] = [
       url: '/projects/sven.png',
       className: 'sven'
     },
-    description: 'Sven is a piece I developed in React for my professor\'s retirement gallery. The theme was to showcase what his students are currently doing after graduation so I thought this would be a fun way to show how art and code often coexist while touching up on my animation skills along the way.',
+    description: 'Sven is a piece I developed in React for my professor\'s retirement gallery. The theme was to showcase what his students are currently doing after graduation so I thought this would be a fun way to display how art and code often coexist while touching up on my knowledge of svg and animation along the way.',
     stack: ['React'],
     links: [
       {
