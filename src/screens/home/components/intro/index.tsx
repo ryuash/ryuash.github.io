@@ -3,7 +3,7 @@ import { RootCSS } from './styles';
 import { contactLinks } from '../../utils';
 
 function Intro() {
-  const skills = [
+  const skillsPrimary = [
     {
       label: 'Vue',
       src: '/icons/vue.png'
@@ -30,10 +30,6 @@ function Intro() {
       src: '/icons/graphql.png'
     },
     {
-      label: 'dart',
-      src: '/icons/dart.svg'
-    },
-    {
       label: 'Typescript',
       src: '/icons/typescript.png'
     },
@@ -48,6 +44,26 @@ function Intro() {
     {
       label: 'CSS',
       src: '/icons/css.svg'
+    }
+  ]
+
+  const skillsSecondary = [
+    {
+      label: 'dart',
+      src: '/icons/dart.svg'
+    },
+    {
+      className: 'go',
+      label: 'golang',
+      src: '/icons/golang.svg'
+    },
+    {
+      label: 'java',
+      src: '/icons/java.svg'
+    },
+    {
+      label: 'maven',
+      src: '/icons/mvn.svg'
     },
     {
       label: 'SQL',
@@ -61,7 +77,7 @@ function Intro() {
   return (
     <RootCSS id="about">
       <h1 className="title">
-          [ Hello? ]
+      Howdy
         </h1>
       <div className="profile">
         <div className="profile--block">
@@ -81,18 +97,13 @@ function Intro() {
       </div>
       <div className="description">
         <p className="description--block">
-          I’m Wingman, a Software Engineer based between New York/ Hong Kong
+          I’m Wingman, a Software Engineer by day and menace by night
         </p>
         <p className="description--block">
-          Currently on the engineering team at Forbole where I lead the development and maintenance of{' '}
-          <a
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-            href="https://bigdipper.live"
-          >
-            Big Dipper
-          </a>
-          , an open source blockchain explorer
+          My main interests are <b>frontend development</b>, <b>pipelines</b>, <b>scalability</b>, and the occassional <b>bash scripts</b>. I love working on animations, data charts and tweaking around component libraries
+        </p>
+        <p className="description--block">
+        While backend may not peak my interests as much, I am no stranger to getting my hands dirty and trying new things
         </p>
         <p className="description--block description--block--links">
           {contactLinks.map((x, i) => {
@@ -115,7 +126,11 @@ function Intro() {
         </p>
       </div>
       <div className="skills">
-        {skills.map((x) => (
+        {skillsPrimary.map((x) => (
+          <img className={`skills--image ${x.className ? `skills--image-${x.className}` : ''}`} src={x.src} key={x.label} alt={x.label} />
+        ))}
+        {" | "}
+        {skillsSecondary.map((x) => (
           <img className={`skills--image ${x.className ? `skills--image-${x.className}` : ''}`} src={x.src} key={x.label} alt={x.label} />
         ))}
       </div>

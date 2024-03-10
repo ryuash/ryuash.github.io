@@ -131,6 +131,10 @@ export const RootCSS = styled(Box)`
     width: 1rem;
   }
 
+  .skills--image-go {
+    width: 2.5rem;
+  }
+
   @media ${props => props.theme.media.generateMedia('md')} {
     .title {
       font-size: 2.5rem;
