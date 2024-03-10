@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   distDir: 'build',
-  assetPrefix: "https://ryuash.github.io" ,
+  assetPrefix: './',
   images: {
     unoptimized: true,
   }
