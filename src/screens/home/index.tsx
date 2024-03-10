@@ -19,14 +19,13 @@ const Home = () => {
         <div className="container-one--three" />
         <div className="container-one--four" />
       </div>
-      <Features />
+      {/* <Features />
       <div className="container-two">
         <div className="container-two--one" />
         <div className="container-two--two" />
         <div className="container-two--three" />
-        {/* <div className="container-two--four" /> */}
         <div className="container-two--five" />
-      </div>
+      </div> */}
       <Projects />
       <div className="container-three">
         <div className="container-three--one" />
