@@ -21,6 +21,7 @@ export const RootCSS = styled.div`
   }
 
   .container-one--three {
+    box-shadow: 0px -23px 47px -4px rgba(173,173,173,1);
     background: ${props => props.theme.colors.primaryTwo};
     width: 40%;
     height: 20px;

@@ -113,6 +113,24 @@ export const RootCSS = styled(Box)`
     margin-top: 1.5rem;
   }
 
+  .skills {
+    display: flex;
+    grid-gap: 0.5rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skills--image {
+    width: 1.5rem;
+    height: auto;
+  }
+
+  .skills--image-astro {
+    width: 1rem;
+  }
+
   @media ${props => props.theme.media.generateMedia('md')} {
     .title {
       font-size: 2.5rem;
