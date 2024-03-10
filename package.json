@@ -7,7 +7,8 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && node ./scripts/deploy-github"
+    "deploy": "npm run build && node ./scripts/deploy-github",
+    "blah": "node ./scripts/deploy-github"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
