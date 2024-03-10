@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "deploy": "npm run build && node ./scripts/deploy-github",
-    "blah": "node ./scripts/deploy-github"
+    "blah": "node ./scripts/deploy-github",
+    "two": "gh-pages -d dist"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
