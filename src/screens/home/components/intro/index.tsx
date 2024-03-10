@@ -83,16 +83,25 @@ function Intro() {
         <p className="description--block">
           I’m Wingman, a Software Engineer based between New York/ Hong Kong
         </p>
-
+        <p className="description--block">
+          Currently on the engineering team at Forbole where I lead the development and maintenance of{' '}
+          <a
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            href="https://bigdipper.live"
+          >
+            Big Dipper
+          </a>
+          , an open source blockchain explorer
+        </p>
         <p className="description--block description--block--links">
           {contactLinks.map((x, i) => {
             const isLast = i < contactLinks.length - 1;
             return (
-              <>
+              <React.Fragment key={`${x.url}-${i}`}>
               <a
                 target="_blank"
                 rel="nofollow noopener noreferrer"
-                key={x.url}
                 href={x.url}
               >
                 {x.display}
@@ -100,14 +109,14 @@ function Intro() {
               {!!isLast && (
                 " | "
               )}
-              </>
+              </React.Fragment>
             )
           })}
         </p>
       </div>
       <div className="skills">
         {skills.map((x) => (
-          <img className={`skills--image ${x.className ? `skills--imaage-${x.className}` : ''}`} src={x.src} key={x.label} alt={x.label} />
+          <img className={`skills--image ${x.className ? `skills--image-${x.className}` : ''}`} src={x.src} key={x.label} alt={x.label} />
         ))}
       </div>
     </RootCSS>
