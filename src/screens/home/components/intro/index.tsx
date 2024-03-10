@@ -3,7 +3,7 @@ import { RootCSS } from './styles';
 import { contactLinks } from '../../utils';
 
 function Intro() {
-  const skills = [
+  const skillsPrimary = [
     {
       label: 'Vue',
       src: '/icons/vue.png'
@@ -30,10 +30,6 @@ function Intro() {
       src: '/icons/graphql.png'
     },
     {
-      label: 'dart',
-      src: '/icons/dart.svg'
-    },
-    {
       label: 'Typescript',
       src: '/icons/typescript.png'
     },
@@ -48,6 +44,26 @@ function Intro() {
     {
       label: 'CSS',
       src: '/icons/css.svg'
+    }
+  ]
+
+  const skillsSecondary = [
+    {
+      label: 'dart',
+      src: '/icons/dart.svg'
+    },
+    {
+      className: 'go',
+      label: 'golang',
+      src: '/icons/golang.svg'
+    },
+    {
+      label: 'java',
+      src: '/icons/java.svg'
+    },
+    {
+      label: 'maven',
+      src: '/icons/mvn.svg'
     },
     {
       label: 'SQL',
@@ -84,10 +100,10 @@ function Intro() {
           I’m Wingman, a Software Engineer by day and menace by night
         </p>
         <p className="description--block">
-          My main interests are <b>frontend development</b>, <b>pipelines</b>, <b>scalability</b>, and the occassional <b>bash integration scripts</b>. While backend does not peak my interest as much, I am capable always down to learn new things and help out wherever needed.
+          My main interests are <b>frontend development</b>, <b>pipelines</b>, <b>scalability</b>, and the occassional <b>bash scripts</b>. I love working on animations, data charts and tweaking around component libraries
         </p>
         <p className="description--block">
-        I love working on animations, data charts and tweaking around component libraries
+        While backend may not peak my interests as much, I am no stranger to getting my hands dirty and trying new things
         </p>
         <p className="description--block description--block--links">
           {contactLinks.map((x, i) => {
@@ -110,7 +126,11 @@ function Intro() {
         </p>
       </div>
       <div className="skills">
-        {skills.map((x) => (
+        {skillsPrimary.map((x) => (
+          <img className={`skills--image ${x.className ? `skills--image-${x.className}` : ''}`} src={x.src} key={x.label} alt={x.label} />
+        ))}
+        {" | "}
+        {skillsSecondary.map((x) => (
           <img className={`skills--image ${x.className ? `skills--image-${x.className}` : ''}`} src={x.src} key={x.label} alt={x.label} />
         ))}
       </div>
