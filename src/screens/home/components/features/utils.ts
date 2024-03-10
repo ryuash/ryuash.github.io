@@ -2,7 +2,7 @@ export const projects: ProjectType[] = [
   {
     title: 'Big Dipper',
     cover: {
-      url: '/projects/big-dipper.png',
+      url: './projects/big-dipper.png',
       className: 'big-dipper'
     },
     description: 'Big Dipper is an open source blockchain explorer that I helped develop and maintain. Currently the project has over 50 forks with the original having over 200 forks. While primarily focused on the Cosmos SDK ecosystem, it has since been expanded to provide support for Elrond, Flow, and Solana too.',
@@ -18,7 +18,7 @@ export const projects: ProjectType[] = [
   {
     title: 'Sven',
     cover: {
-      url: '/projects/sven.png',
+      url: './projects/sven.png',
       className: 'sven'
     },
     description: 'Sven is a piece I developed in React for my professor\'s retirement gallery. The theme was to showcase what his students are currently doing after graduation so I thought this would be a fun way to display how art and code often coexist while touching up on my knowledge of svg and animation along the way.',
@@ -39,7 +39,7 @@ export const projects: ProjectType[] = [
   {
     title: 'Multiplayer Conway\'s Game of Life',
     cover: {
-      url: '/projects/game-of-life.png',
+      url: './projects/game-of-life.png',
       className: 'game-of-life'
     },
     description: 'A spinoff of the popular Game of Life. This project was created as a fun refresher on how to use SocketIO and its websocket protocols. Real-time interactive was created using SocketIO and Nodejs on the backend and React on the frontend.',
