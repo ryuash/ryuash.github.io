@@ -61,7 +61,7 @@ function Intro() {
   return (
     <RootCSS id="about">
       <h1 className="title">
-          [ Hello? ]
+      Howdy
         </h1>
       <div className="profile">
         <div className="profile--block">
@@ -81,18 +81,13 @@ function Intro() {
       </div>
       <div className="description">
         <p className="description--block">
-          I’m Wingman, a Software Engineer based between New York/ Hong Kong
+          I’m Wingman, a Software Engineer by day and menace by night
         </p>
         <p className="description--block">
-          Currently on the engineering team at Forbole where I lead the development and maintenance of{' '}
-          <a
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-            href="https://bigdipper.live"
-          >
-            Big Dipper
-          </a>
-          , an open source blockchain explorer
+          My main interests are <b>frontend development</b>, <b>pipelines</b>, <b>scalability</b>, and the occassional <b>bash integration scripts</b>. While backend does not peak my interest as much, I am capable always down to learn new things and help out wherever needed.
+        </p>
+        <p className="description--block">
+        I love working on animations, data charts and tweaking around component libraries
         </p>
         <p className="description--block description--block--links">
           {contactLinks.map((x, i) => {
