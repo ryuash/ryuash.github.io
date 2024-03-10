@@ -12,11 +12,10 @@ const Footer = () => {
         {contactLinks.map((x, i) => {
           const isLast = i < contactLinks.length - 1;
           return (
-            <>
+            <React.Fragment key={x.url}>
             <a
               target="_blank"
               rel="nofollow noopener noreferrer"
-              key={x.url}
               href={x.url}
             >
               {x.display}
@@ -24,7 +23,7 @@ const Footer = () => {
             {!!isLast && (
               " | "
             )}
-            </>
+            </React.Fragment>
           )
         })}
       </p>
