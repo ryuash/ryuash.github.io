@@ -6,72 +6,72 @@ function Intro() {
   const skillsPrimary = [
     {
       label: 'Vue',
-      src: '/icons/vue.png'
+      src: './icons/vue.png'
     },
     {
       label: 'React',
-      src: '/icons/react.png'
+      src: './icons/react.png'
     },
     {
       label: 'Nextjs',
-      src: '/icons/nextjs.svg'
+      src: './icons/nextjs.svg'
     },
     {
       label: 'D3',
-      src: '/icons/d3.svg'
+      src: './icons/d3.svg'
     },
     {
       className: 'astro',
       label: 'Astrojs',
-      src: '/icons/astrojs.svg'
+      src: './icons/astrojs.svg'
     },
     {
       label: 'Graphql',
-      src: '/icons/graphql.png'
+      src: './icons/graphql.png'
     },
     {
       label: 'Typescript',
-      src: '/icons/typescript.png'
+      src: './icons/typescript.png'
     },
     {
       label: 'Javascript',
-      src: '/icons/javascript.png'
+      src: './icons/javascript.png'
     },
     {
       label: 'HTML',
-      src: '/icons/html.svg'
+      src: './icons/html.svg'
     },
     {
       label: 'CSS',
-      src: '/icons/css.svg'
+      src: './icons/css.svg'
     }
   ]
 
   const skillsSecondary = [
     {
       label: 'dart',
-      src: '/icons/dart.svg'
+      src: './icons/dart.svg'
     },
     {
       className: 'go',
       label: 'golang',
-      src: '/icons/golang.svg'
+      src: './icons/golang.svg'
     },
     {
       label: 'java',
-      src: '/icons/java.svg'
+      src: './icons/java.svg'
     },
     {
       label: 'maven',
-      src: '/icons/mvn.svg'
+      src: './icons/mvn.svg'
     },
     {
       label: 'SQL',
-      src: '/icons/sql.svg'
+      src: './icons/sql.svg'
     },
     {
       label: 'mongo',
-      src: '/icons/mongo.svg'
+      src: './icons/mongo.svg'
     },
   ]
   return (

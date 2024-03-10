@@ -8,19 +8,19 @@ export const GlobalCSS = createGlobalStyle`
 
   @font-face {
     font-family: 'Hind Madurai';
-    src: url("/fonts/HindMadurai-Regular.ttf");
+    src: url("./fonts/HindMadurai-Regular.ttf");
     font-weight: 400;
   }
 
   @font-face {
     font-family: 'Hind Madurai';
-    src: url("/fonts/HindMadurai-Medium.ttf");
+    src: url("./fonts/HindMadurai-Medium.ttf");
     font-weight: 500;
   }
 
   @font-face {
     font-family: 'Lobster';
-    src: url("/fonts/Lobster-Regular.ttf");
+    src: url("./fonts/Lobster-Regular.ttf");
     font-weight: 400;
   }
 

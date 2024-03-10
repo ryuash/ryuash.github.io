@@ -25,7 +25,7 @@ const ADDITIONAL_LINK_TAGS_SEO = [
   {
     rel: 'icon',
     type: 'image/png',
-    href: '/icons/favicon-32x32.png',
+    href: './icons/favicon-32x32.png',
     sizes: '32x32',
   },
 ];
