@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   distDir: 'build',
-  // assetPrefix: "/" ,
+  assetPrefix: './',
   images: {
     unoptimized: true,
   }

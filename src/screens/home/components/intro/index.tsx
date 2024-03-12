@@ -83,7 +83,7 @@ function Intro() {
         <div className="profile--block">
           <img
             className="profile--image"
-            src="/images/profile.jpeg"
+            src="./images/profile.jpeg"
             alt="profile photo"
           />
         </div>
