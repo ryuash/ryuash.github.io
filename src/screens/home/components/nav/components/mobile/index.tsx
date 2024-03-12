@@ -41,7 +41,7 @@ const Mobile = () => {
         </AnchorLink>
       ))}
       </div>
-      <div className="menu--overlay" onClick={toggle} />
+      <div className="menu--overlay" onClick={toggleOff} />
       <div className="nav--placeholder" />
     </RootCSS>
   )
