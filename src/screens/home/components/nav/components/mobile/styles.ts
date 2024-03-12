@@ -49,7 +49,7 @@ export const RootCSS = styled.div`
     width: 100%;
     height: 100vh;
     background: rgba(12, 13, 16, 0.50);
-    z-index: 50;
+    z-index: ${props => props.isOpen ? '50' : '-1'};
   }
 `;
 
