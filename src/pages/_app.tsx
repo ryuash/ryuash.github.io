@@ -9,9 +9,9 @@ const OPEN_GRAPH_SEO = {
   site_name: 'Ryuash',
   images: [
     {
-      url: 'https://ryuash.github.io./images/icon.png',
-      width: 300,
-      height: 300,
+      url: 'https://i.imgur.com/ghSRCxK.png',
+      width: 1200,
+      height: 630,
       alt: 'Preview Photo',
     },
   ],
